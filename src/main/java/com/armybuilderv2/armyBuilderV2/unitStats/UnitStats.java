@@ -1,4 +1,4 @@
-package com.armybuilderv2.armyBuilderV2.armyUnit;
+package com.armybuilderv2.armyBuilderV2.unitStats;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,13 +14,30 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class ArmyUnit {
+public class UnitStats {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private double quantity;
-    private double totalCost;
-    // private Unit unit;
+    private Integer m;
+    private Integer ws;
+    private Integer bs;
+    private Integer s;
+    private Integer t;
+    private Integer w;
+    private Integer i;
+    private Integer a;
+    private Integer ld;
+    private Integer basicSave;
+    private Integer wardSave;
+
+
+
+
+
+
+
 
 }
+

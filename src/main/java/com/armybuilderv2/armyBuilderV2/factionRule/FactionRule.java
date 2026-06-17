@@ -1,8 +1,7 @@
-package com.armybuilderv2.armyBuilderV2.armyUnit;
+package com.armybuilderv2.armyBuilderV2.factionRule;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,13 +13,10 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class ArmyUnit {
-
+public class FactionRule {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Long id;
-    private double quantity;
-    private double totalCost;
-    // private Unit unit;
-
+    private String name;
+    private String description;
 }
